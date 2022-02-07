@@ -1,0 +1,130 @@
+:root {
+  --color-1: #09090f;
+  --color-2: #334;
+  --color-3: #938eaf;
+  --color-4: #f26;
+  --color-5: #edf;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 400px auto;
+  grid-template-rows: 1fr 30px;
+  grid-template-areas: "aside" "main" "footer";
+
+  background: var(--color-1);
+  color: var(--color-3);
+}
+
+aside {
+  grid-area: aside;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+
+  border: 1px solid white;
+}
+
+main {
+  grid-area: main;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+
+  border: 1px solid white;
+}
+
+footer {
+  grid-area: footer;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+
+  background: blue;
+
+  border: 1px solid white;
+}
+
+main .box {
+  border: 3px solid white;
+  border-radius: 20px;
+  margin: 15px;
+  padding: 15px;
+
+  background-color: var(--color-2);
+}
+
+main .my-projects {
+  display: flex;
+}
+
+aside .box {
+  border: 3px solid blue;
+  border-radius: 20px;
+  margin: 20px 20px;
+  padding: 15px;
+
+  background-color: var(--color-2);
+}
+
+.perfil {
+  width: 348px;
+  text-align: center;
+}
+
+.contato {
+  width: 348px;
+}
+
+.contato p {
+  display: inline;
+}
+
+.contato a {
+  display: block;
+}
+
+.tecnologias {
+  width: 348px;
+}
+
+.tecnologias article {
+  display: flex;
+}
+
+.tecnologias article div {
+  padding: 4px;
+  margin: 4px 6px 4px 0;
+  max-width: 85px;
+
+  background-color: var(--color-4);
+  color: var(--color-5);
+  border-radius: 7px;
+}
+
+.experiencias {
+  width: 348px;
+}
+
+.educacao {
+  width: 348px;
+}
